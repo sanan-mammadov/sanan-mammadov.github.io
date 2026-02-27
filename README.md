@@ -1,1 +1,1 @@
-# sananmammadov.github.io
+# sanan-mammadov.github.io
