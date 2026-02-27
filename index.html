@@ -36,32 +36,33 @@
         }
     </script>
     <style>
-        /* Custom subtle gradient for project cards */
         .card-gradient-1 { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
         .card-gradient-2 { background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%); }
+        .card-gradient-3 { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
     <!-- Navigation -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
                     <span class="font-bold text-xl tracking-tight text-brand-900">SM.</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden lg:flex space-x-8">
                     <a href="#about" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">About</a>
-                    <a href="#expertise" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Expertise</a>
                     <a href="#experience" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Experience</a>
                     <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Projects</a>
+                    <a href="#education" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Education</a>
+                    <a href="#leadership" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Leadership</a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <a href="https://linkedin.com/in/sanan-mammadov-0042z13mm" target="_blank" class="text-slate-400 hover:text-brand-600 transition-colors">
                         <i data-lucide="linkedin" class="w-5 h-5"></i>
                     </a>
                     <a href="mailto:sanan.mammadv@gmail.com" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-lg text-white bg-brand-900 hover:bg-slate-800 transition-colors shadow-sm">
-                        Let's Talk
+                        Contact Me
                     </a>
                 </div>
             </div>
@@ -71,84 +72,73 @@
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-30" style="background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 32px 32px;"></div>
-        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="inline-flex items-center px-3 py-1 rounded-full bg-brand-50 text-brand-600 text-sm font-medium mb-8 border border-brand-100">
                 <span class="flex h-2 w-2 rounded-full bg-brand-500 mr-2"></span>
-                Available for Strategy & Management Roles
+                Available for Strategy, Project Management & Consulting Roles
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold text-brand-900 tracking-tight mb-6">
                 Bridging the gap between <br class="hidden md:block" />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-cyan-500">Strategy & Data.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-cyan-500">Business Strategy & Data.</span>
             </h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-600 mb-10">
-                Hi, I'm Sanan Mammadov. I translate complex financial data into actionable business strategies to drive organizational growth and optimization.
+            <p class="mt-4 text-xl text-slate-600 mb-10 leading-relaxed">
+                Hi, I'm Sanan Mammadov. I am an M.Sc. Management International student in Germany with a background in Data Science. I specialize in translating complex financial datasets into actionable strategies that drive organizational growth.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#projects" class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-medium rounded-lg text-white bg-brand-600 hover:bg-brand-500 transition-colors shadow-sm">
                     View My Work
                 </a>
-                <a href="#experience" class="inline-flex items-center justify-center px-6 py-3.5 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition-colors shadow-sm">
-                    My Experience
+                <a href="https://linkedin.com/in/sanan-mammadov-0042z13mm" target="_blank" class="inline-flex items-center justify-center px-6 py-3.5 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition-colors shadow-sm">
+                    Connect on LinkedIn
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section (Grid Layout) -->
-    <section id="expertise" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-brand-900">Core Expertise</h2>
-                <p class="mt-4 text-lg text-slate-600">The skills I bring to the table as a Consultant & Manager.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Skill 1 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-brand-100 text-brand-600 mb-6">
-                        <i data-lucide="line-chart" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-3">Strategic Analytics</h3>
-                    <p class="text-slate-600 mb-4">Leveraging Python, R, and SQL to process massive datasets and identify market signals that inform high-level corporate strategy.</p>
+    <!-- Skills Overview -->
+    <section id="about" class="py-16 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-200">
+                <div class="p-4">
+                    <i data-lucide="bar-chart-3" class="w-8 h-8 mx-auto text-brand-500 mb-4"></i>
+                    <h3 class="text-lg font-bold text-brand-900 mb-2">Data & Analytics</h3>
+                    <p class="text-slate-600 text-sm">Python, R, SQL, Tableau, Financial Modeling, Robust Regression, Predictive Algorithms.</p>
                 </div>
-                <!-- Skill 2 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-cyan-100 text-cyan-600 mb-6">
-                        <i data-lucide="briefcase" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-3">Project Management</h3>
-                    <p class="text-slate-600 mb-4">Leading cross-functional projects, from local SME consulting to international case challenges, with strong organizational and coordination skills.</p>
+                <div class="p-4 pt-8 md:pt-4">
+                    <i data-lucide="briefcase" class="w-8 h-8 mx-auto text-brand-500 mb-4"></i>
+                    <h3 class="text-lg font-bold text-brand-900 mb-2">Strategy & Operations</h3>
+                    <p class="text-slate-600 text-sm">Project Management, Time Management, Corporate Strategy, SME Consulting, Financial Ratios.</p>
                 </div>
-                <!-- Skill 3 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-indigo-100 text-indigo-600 mb-6">
-                        <i data-lucide="pie-chart" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-3">Financial Optimization</h3>
-                    <p class="text-slate-600 mb-4">Building models to forecast business outcomes, optimizing workflows with Advanced Excel, and performing cost-effectiveness analyses.</p>
+                <div class="p-4 pt-8 md:pt-4">
+                    <i data-lucide="languages" class="w-8 h-8 mx-auto text-brand-500 mb-4"></i>
+                    <h3 class="text-lg font-bold text-brand-900 mb-2">Languages & Tools</h3>
+                    <p class="text-slate-600 text-sm">English (C1), German (A2 - Grade 1.0), Turkish (Native), Azerbaijani (Native). Advanced Excel & Power Query.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Professional Experience -->
-    <section id="experience" class="py-20 bg-slate-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-brand-900 mb-12">Professional Experience</h2>
+    <section id="experience" class="py-24 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-brand-900 mb-12 flex items-center">
+                <i data-lucide="building-2" class="w-8 h-8 mr-3 text-brand-500"></i>
+                Professional Experience
+            </h2>
             
             <div class="space-y-8">
                 <!-- Job 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative overflow-hidden group hover:border-brand-300 transition-colors">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-brand-500"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                         <div>
                             <h3 class="text-2xl font-bold text-brand-900">Junior Consultant</h3>
-                            <div class="text-brand-600 font-medium text-lg mt-1">IAC Würzburg e.V. (Student Consultancy)</div>
+                            <div class="text-slate-500 font-medium text-lg mt-1">IAC Würzburg e.V. (Student Consultancy) | Germany</div>
                         </div>
-                        <div class="mt-2 md:mt-0 flex items-center text-slate-500 bg-slate-100 px-3 py-1 rounded-full text-sm font-medium">
-                            <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                        <div class="mt-2 md:mt-0 flex items-center text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold">
                             Nov 2025 – Present
                         </div>
                     </div>
-                    <p class="text-slate-600 mb-4">Interdisciplinary student consultancy developing data-driven solutions for local SMEs.</p>
                     <ul class="space-y-3 text-slate-600">
                         <li class="flex items-start">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 mr-3 mt-0.5 flex-shrink-0"></i>
@@ -156,27 +146,27 @@
                         </li>
                         <li class="flex items-start">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 mr-3 mt-0.5 flex-shrink-0"></i>
-                            Completing structured training in project management, analytical frameworks, and case-solving.
+                            Completing structured training in project management, analytical frameworks, and case-solving to develop data-driven solutions for local SMEs.
                         </li>
                     </ul>
                 </div>
 
                 <!-- Job 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative overflow-hidden group hover:border-brand-300 transition-colors">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-slate-300 group-hover:bg-brand-400 transition-colors"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                         <div>
-                            <h3 class="text-2xl font-bold text-brand-900">Intern Finance and Accounting</h3>
-                            <div class="text-brand-600 font-medium text-lg mt-1">Dengema Company | Kayseri, Türkiye</div>
+                            <h3 class="text-2xl font-bold text-brand-900">Intern Finance & Accounting</h3>
+                            <div class="text-slate-500 font-medium text-lg mt-1">Dengema Company | Kayseri, Türkiye</div>
                         </div>
-                        <div class="mt-2 md:mt-0 flex items-center text-slate-500 bg-slate-100 px-3 py-1 rounded-full text-sm font-medium">
-                            <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                        <div class="mt-2 md:mt-0 flex items-center text-slate-600 bg-slate-100 px-3 py-1 rounded-full text-sm font-semibold">
                             Jan 2024 – Feb 2024
                         </div>
                     </div>
                     <ul class="space-y-3 text-slate-600">
                         <li class="flex items-start">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 mr-3 mt-0.5 flex-shrink-0"></i>
-                            Developed custom Power Query functions to automate the retrieval of 100,000+ financial data points for over 500 stocks.
+                            Developed custom Power Query functions to automate the retrieval of 100,000+ financial data points for over 500 stocks within a strict 2-week deadline.
                         </li>
                         <li class="flex items-start">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 mr-3 mt-0.5 flex-shrink-0"></i>
@@ -192,50 +182,70 @@
         </div>
     </section>
 
-    <!-- Projects Section (Cards) -->
-    <section id="projects" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-brand-900 mb-12">Featured Data Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-brand-900 mb-12 flex items-center">
+                <i data-lucide="folder-git-2" class="w-8 h-8 mr-3 text-brand-500"></i>
+                Data & Research Portfolio
+            </h2>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="group rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300">
-                    <div class="h-48 card-gradient-1 p-6 flex flex-col justify-end relative overflow-hidden">
-                        <i data-lucide="trending-up" class="w-32 h-32 absolute -top-4 -right-4 text-blue-500/10"></i>
+                <div class="rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-40 card-gradient-1 p-6 flex flex-col justify-end relative overflow-hidden">
+                        <i data-lucide="trending-up" class="w-24 h-24 absolute -top-4 -right-4 text-blue-500/10"></i>
                         <div class="inline-flex mb-2 px-3 py-1 rounded-md bg-white/60 text-brand-900 text-xs font-bold backdrop-blur-sm w-fit">Machine Learning</div>
-                        <h3 class="text-2xl font-bold text-brand-900 relative z-10">Legislator Trading Insights</h3>
+                        <h3 class="text-xl font-bold text-brand-900 relative z-10">Legislator Trading Insights</h3>
                     </div>
-                    <div class="p-8 bg-white">
-                        <p class="text-slate-600 mb-6">Leveraged the informational advantages of U.S. Legislators by building a synthetic portfolio based on historical trade records.</p>
+                    <div class="p-6 bg-white flex-grow flex flex-col">
+                        <p class="text-slate-600 text-sm mb-4 flex-grow">Analyzed 46,504 trade records to evaluate the stock trading performance of US Congress members.</p>
                         <ul class="space-y-2 text-sm text-slate-600 mb-6">
-                            <li class="flex items-center"><i data-lucide="database" class="w-4 h-4 mr-2 text-brand-500"></i> Analyzed 46,504 trade records.</li>
-                            <li class="flex items-center"><i data-lucide="target" class="w-4 h-4 mr-2 text-brand-500"></i> Achieved abnormal returns (~40%).</li>
+                            <li class="flex items-start"><i data-lucide="target" class="w-4 h-4 mr-2 text-brand-500 mt-0.5"></i> Applied CAPM & Jensen's Alpha.</li>
+                            <li class="flex items-start"><i data-lucide="target" class="w-4 h-4 mr-2 text-brand-500 mt-0.5"></i> Demonstrated synthetic portfolio achieved ~40% abnormal returns.</li>
                         </ul>
-                        <div class="flex gap-2">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">CAPM</span>
-                            <span class="span-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">Jensen's Alpha</span>
+                        <div class="flex gap-2 flex-wrap mt-auto">
                             <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">Python</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">Financial Algorithms</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="group rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300">
-                    <div class="h-48 card-gradient-2 p-6 flex flex-col justify-end relative overflow-hidden">
-                        <i data-lucide="activity" class="w-32 h-32 absolute -top-4 -right-4 text-indigo-500/10"></i>
+                <div class="rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-40 card-gradient-2 p-6 flex flex-col justify-end relative overflow-hidden">
+                        <i data-lucide="pie-chart" class="w-24 h-24 absolute -top-4 -right-4 text-indigo-500/10"></i>
                         <div class="inline-flex mb-2 px-3 py-1 rounded-md bg-white/60 text-brand-900 text-xs font-bold backdrop-blur-sm w-fit">Statistical Analysis</div>
-                        <h3 class="text-2xl font-bold text-brand-900 relative z-10">Financial Ratios & Stock Returns</h3>
+                        <h3 class="text-xl font-bold text-brand-900 relative z-10">Financial Ratios & Stock Returns</h3>
                     </div>
-                    <div class="p-8 bg-white">
-                        <p class="text-slate-600 mb-6">Programmatically collected and cleaned financial statement data to identify predictive signals in quarterly ratios.</p>
+                    <div class="p-6 bg-white flex-grow flex flex-col">
+                        <p class="text-slate-600 text-sm mb-4 flex-grow">Systematically researched, extracted, and processed 8 years of financial data for 27 BIST 100 manufacturing firms.</p>
                         <ul class="space-y-2 text-sm text-slate-600 mb-6">
-                            <li class="flex items-start"><i data-lucide="database" class="w-4 h-4 mr-2 text-brand-500 mt-1"></i> Processed 8 years of data for 27 BIST 100 firms.</li>
-                            <li class="flex items-start"><i data-lucide="target" class="w-4 h-4 mr-2 text-brand-500 mt-1"></i> Identified negative correlation in Debt-to-Equity.</li>
+                            <li class="flex items-start"><i data-lucide="target" class="w-4 h-4 mr-2 text-brand-500 mt-0.5"></i> Identified negative correlation in Debt-to-Equity ratios.</li>
+                            <li class="flex items-start"><i data-lucide="target" class="w-4 h-4 mr-2 text-brand-500 mt-0.5"></i> Deployed Robust Regression & Lasso to mitigate outliers.</li>
                         </ul>
-                        <div class="flex gap-2 flex-wrap">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">R</span>
+                        <div class="flex gap-2 flex-wrap mt-auto">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">R Studio</span>
                             <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">Robust Regression</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">Lasso</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-40 card-gradient-3 p-6 flex flex-col justify-end relative overflow-hidden">
+                        <i data-lucide="plane" class="w-24 h-24 absolute -top-4 -right-4 text-emerald-500/10"></i>
+                        <div class="inline-flex mb-2 px-3 py-1 rounded-md bg-white/60 text-brand-900 text-xs font-bold backdrop-blur-sm w-fit">Gov. Research Grant</div>
+                        <h3 class="text-xl font-bold text-brand-900 relative z-10">Tubitak 2209-A: Aviation Safety</h3>
+                    </div>
+                    <div class="p-6 bg-white flex-grow flex flex-col">
+                        <p class="text-slate-600 text-sm mb-4 flex-grow">Acted as a researcher for a government-backed TUBITAK project focusing on AI Assistance and Aviation Safety.</p>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li class="flex items-start"><i data-lucide="target" class="w-4 h-4 mr-2 text-brand-500 mt-0.5"></i> Responsible for systematic information collection and data organization.</li>
+                        </ul>
+                        <div class="flex gap-2 flex-wrap mt-auto">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">Research Data</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full font-medium">Systematic Review</span>
                         </div>
                     </div>
                 </div>
@@ -243,47 +253,122 @@
         </div>
     </section>
 
-    <!-- Education & Academics -->
-    <section class="py-20 bg-brand-900 text-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-12">Academic Background</h2>
+    <!-- Education Section -->
+    <section id="education" class="py-24 bg-brand-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold flex items-center">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 mr-3 text-brand-400"></i>
+                        Academic Background
+                    </h2>
+                </div>
+                <div class="mt-4 md:mt-0 bg-white/10 px-4 py-2 rounded-lg border border-white/20 backdrop-blur-sm inline-flex items-center">
+                    <i data-lucide="award" class="w-5 h-5 text-yellow-400 mr-2"></i>
+                    <span class="font-semibold text-sm">GMAT Focus Score: 575</span>
+                </div>
+            </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Master's -->
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm">
-                    <div class="text-brand-400 font-medium mb-1">Oct 2025 - Present</div>
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-colors">
+                    <div class="text-brand-400 font-semibold mb-2">Oct 2025 - Present</div>
                     <h4 class="text-xl font-bold mb-2">M.Sc. Management International</h4>
-                    <p class="text-slate-300 text-sm mb-4">Julius-Maximilians-Universität Würzburg</p>
-                    <div class="space-y-2 text-sm text-slate-400">
-                        <p>• Corporate Strategy & Decision Systems</p>
-                        <p>• Optimization in Practice</p>
-                        <p class="text-white font-medium mt-4">German A2 — Grade: 1.0</p>
+                    <p class="text-slate-300 text-sm mb-6 border-b border-white/10 pb-4">Julius-Maximilians-Universität Würzburg</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> Corporate Strategy</li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> Strategic Decision & Competition</li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> Optimization in Practice</li>
+                    </ul>
+                    <div class="mt-6 inline-flex bg-brand-500/20 text-brand-200 px-3 py-1 rounded-md text-sm font-medium border border-brand-500/30">
+                        German A2 — Grade: 1.0 (Excellent)
                     </div>
                 </div>
 
                 <!-- Data Science -->
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">4.0 GPA</div>
-                    <div class="text-brand-400 font-medium mb-1">Sep 2024 - Jun 2025</div>
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm relative overflow-hidden hover:bg-white/10 transition-colors">
+                    <div class="absolute top-0 right-0 bg-cyan-500 text-white text-sm font-bold px-4 py-1.5 rounded-bl-xl shadow-lg">4.0 GPA</div>
+                    <div class="text-brand-400 font-semibold mb-2">Sep 2024 - Jun 2025</div>
                     <h4 class="text-xl font-bold mb-2">Postgraduate Data Science</h4>
-                    <p class="text-slate-300 text-sm mb-4">Abdullah Gül University</p>
-                    <div class="space-y-2 text-sm text-slate-400">
-                        <p>• Advanced Statistics</p>
-                        <p>• Machine Learning</p>
-                        <p>• Forecasting in Business</p>
-                    </div>
+                    <p class="text-slate-300 text-sm mb-6 border-b border-white/10 pb-4">Abdullah Gül University</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> Advanced Statistics</li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> Machine Learning</li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> Forecasting in Business</li>
+                    </ul>
                 </div>
 
                 <!-- BBA -->
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">3.76 GPA</div>
-                    <div class="text-brand-400 font-medium mb-1">Sep 2019 - Jun 2024</div>
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm relative overflow-hidden hover:bg-white/10 transition-colors">
+                    <div class="absolute top-0 right-0 bg-cyan-500 text-white text-sm font-bold px-4 py-1.5 rounded-bl-xl shadow-lg">3.76 GPA</div>
+                    <div class="text-brand-400 font-semibold mb-2">Sep 2019 - Jun 2024</div>
                     <h4 class="text-xl font-bold mb-2">Bachelor of Business Admin.</h4>
-                    <p class="text-slate-300 text-sm mb-4">Abdullah Gül University</p>
-                    <div class="space-y-2 text-sm text-slate-400">
-                        <p>• High Honor Student</p>
-                        <p>• YTB Scholarship recipient</p>
-                        <p>• Corporate Finance & Analytics</p>
+                    <p class="text-slate-300 text-sm mb-6 border-b border-white/10 pb-4">Abdullah Gül University</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> High Honor Student</li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> Business Analytics & Stats</li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 mt-0.5 text-brand-400"></i> Operations & Strategic Mgmt</li>
+                    </ul>
+                    <div class="mt-6 inline-flex bg-yellow-500/20 text-yellow-200 px-3 py-1 rounded-md text-sm font-medium border border-yellow-500/30">
+                        Türkiye Scholarships (YTB) Winner
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Extracurriculars -->
+    <section id="leadership" class="py-24 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-brand-900 mb-12 flex items-center">
+                <i data-lucide="users" class="w-8 h-8 mr-3 text-brand-500"></i>
+                Leadership & Social Impact
+            </h2>
+
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                <!-- EA Program -->
+                <div class="p-6 md:p-8 border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="bg-brand-50 p-4 rounded-xl text-brand-600 hidden md:block">
+                        <i data-lucide="globe" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+                            <h3 class="text-xl font-bold text-brand-900">Effective Altruism (EA) Fellow</h3>
+                            <span class="text-sm text-slate-500">Dec 2025 - Jan 2026</span>
+                        </div>
+                        <p class="text-slate-600 mb-3">Completed an intensive 8-week program on evidence-based frameworks to identify and prioritize high-impact global solutions.</p>
+                        <div class="inline-flex items-center px-3 py-1 rounded bg-slate-100 text-slate-600 text-xs font-mono">
+                            Certificate ID: INT202512SaMaX6KDO
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDG Leadership -->
+                <div class="p-6 md:p-8 border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="bg-emerald-50 p-4 rounded-xl text-emerald-600 hidden md:block">
+                        <i data-lucide="leaf" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+                            <h3 class="text-xl font-bold text-brand-900">Sustainable Development Goals (SDG) Leader</h3>
+                            <span class="text-sm text-slate-500">2022 - 2024</span>
+                        </div>
+                        <p class="text-slate-600 mb-2">Led the Creative Hub Social Incubation Center Project. Organized field activities reaching over 50 university students to effectively teach SDGs.</p>
+                        <p class="text-slate-600">Led weekly sessions introducing the SDGs to primary school students, translating complex global issues into accessible learning modules.</p>
+                    </div>
+                </div>
+
+                <!-- AGU Business Club -->
+                <div class="p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="bg-amber-50 p-4 rounded-xl text-amber-600 hidden md:block">
+                        <i data-lucide="calendar-days" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+                            <h3 class="text-xl font-bold text-brand-900">Event Organization Management</h3>
+                            <span class="text-sm text-slate-500">AGU Business Club</span>
+                        </div>
+                        <p class="text-slate-600">Assisted with the planning, logistics, and execution of various university-wide club events, fostering campus networking and professional development.</p>
                     </div>
                 </div>
             </div>
@@ -292,17 +377,18 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 py-12 border-t border-slate-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-6 md:mb-0">
-                <span class="font-bold text-xl tracking-tight text-white">SM.</span>
-                <p class="text-slate-500 text-sm mt-2">Würzburg, Bavaria, Germany</p>
+                <span class="font-bold text-xl tracking-tight text-white">Sanan Mammadov.</span>
+                <p class="text-slate-400 text-sm mt-2">Würzburg, Bavaria, Germany</p>
+                <p class="text-slate-500 text-xs mt-1">Beyond the desk: Chess, Tennis, Fitness, and Skiing.</p>
             </div>
-            <div class="flex space-x-6">
-                <a href="mailto:sanan.mammadv@gmail.com" class="text-slate-400 hover:text-white transition-colors">
-                    <i data-lucide="mail" class="w-5 h-5"></i>
+            <div class="flex space-x-6 items-center">
+                <a href="mailto:sanan.mammadv@gmail.com" class="text-slate-400 hover:text-white transition-colors flex items-center text-sm">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i> Email Me
                 </a>
-                <a href="https://linkedin.com/in/sanan-mammadov-0042z13mm" target="_blank" class="text-slate-400 hover:text-white transition-colors">
-                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                <a href="https://linkedin.com/in/sanan-mammadov-0042z13mm" target="_blank" class="text-slate-400 hover:text-white transition-colors flex items-center text-sm">
+                    <i data-lucide="linkedin" class="w-5 h-5 mr-2"></i> LinkedIn
                 </a>
             </div>
         </div>
